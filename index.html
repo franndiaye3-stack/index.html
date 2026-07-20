@@ -54,7 +54,6 @@
 
         body {
             font-family: var(--font-main);
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -104,22 +103,18 @@
 /* WRAPPER DE LA PHOTO */
 .profile-photo-wrapper {
     position: absolute;
-    bottom: -75px;
+    bottom: -90px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
-    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.2));  /* ← AJOUTÉ : ombre portée */
 }
 
 .profile-photo {
-    width: 130px;
-    height: 130px;
-    border-radius: var(--radius-full);
-    border: 5px solid white;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 5px solid #fff;
     object-fit: cover;
-    background: var(--surface);
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .profile-photo:hover {
@@ -468,45 +463,23 @@
         
         /* Smartphones */
         @media (max-width: 480px) {
-            .vcard-container {
-                max-width: 100%;
-            }
-            
-            .hero-banner {
-                height: 150px;
-            }
-            
-            .profile-photo {
-                width: 80px;
-                height: 80px;
-                bottom: -40px;
-            }
-            
-            .card-content {
-                padding: 50px 16px 20px;
-            }
-            
-            .full-name {
-                font-size: 20px;
-            }
-            
-            .action-buttons {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 8px;
-            }
-            
-            .btn {
-                font-size: 13px;
-                padding: 10px 12px;
-            }
-            
-            .social-icon {
-                width: 40px;
-                height: 40px;
-                font-size: 16px;
-            }
-        }
 
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-photo-wrapper {
+        bottom: -90px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card-content {
+        padding-top: 110px;
+    }
+
+}
         /* Tablettes */
         @media (min-width: 481px) and (max-width: 768px) {
             .vcard-container {
@@ -656,8 +629,7 @@
 
             <!-- Google Maps -->
             <div class="map-container" aria-label="Localisation sur Google Maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3859.8528114467294!2d-17.44096172675321!3d14.664293125517828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLamine%20Gueye%2C%20Dakar%2C%20Senegal!5e0!3m2!1sfr!2ssn!4v1784571483446!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-                ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3859.8528114467294!2d-17.44096172675321!3d14.664293125517828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLamine%20Gueye%2C%20Dakar%2C%20Senegal!5e0!3m2!1sfr!2ssn!4v1784571483446!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
 
             <!-- Réseaux sociaux -->
