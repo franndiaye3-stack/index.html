@@ -103,22 +103,18 @@
 /* WRAPPER DE LA PHOTO */
 .profile-photo-wrapper {
     position: absolute;
-    bottom: -75px;
+    bottom: -90px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
-    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.2));  /* ← AJOUTÉ : ombre portée */
 }
 
 .profile-photo {
-    width: 130px;
-    height: 130px;
-    border-radius: var(--radius-full);
-    border: 5px solid white;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 5px solid #fff;
     object-fit: cover;
-    background: var(--surface);
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .profile-photo:hover {
@@ -467,45 +463,23 @@
         
         /* Smartphones */
         @media (max-width: 480px) {
-            .vcard-container {
-                max-width: 100%;
-            }
-            
-            .hero-banner {
-                height: 150px;
-            }
-            
-            .profile-photo {
-                width: 80px;
-                height: 80px;
-                bottom: -40px;
-            }
-            
-            .card-content {
-                padding: 50px 16px 20px;
-            }
-            
-            .full-name {
-                font-size: 20px;
-            }
-            
-            .action-buttons {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 8px;
-            }
-            
-            .btn {
-                font-size: 13px;
-                padding: 10px 12px;
-            }
-            
-            .social-icon {
-                width: 40px;
-                height: 40px;
-                font-size: 16px;
-            }
-        }
 
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-photo-wrapper {
+        bottom: -90px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card-content {
+        padding-top: 110px;
+    }
+
+}
         /* Tablettes */
         @media (min-width: 481px) and (max-width: 768px) {
             .vcard-container {
